@@ -182,7 +182,7 @@ strong { font-weight: 500; color: #1a1a1a; }
 
 .hero-mockup {
    width: 100%;
-   max-width: 600px;
+   max-width: 300px;
    height: auto;
    justify-self: center;
 }
