@@ -146,6 +146,10 @@ strong { font-weight: 500; color: #1a1a1a; }
   max-width: 1400px;
   margin: 0 auto;
   animation: fadeInUp 0.8s ease;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 64px;
+   align-items: center;
 }
 
 .hero-content.hidden { display: none; }
@@ -174,6 +178,13 @@ strong { font-weight: 500; color: #1a1a1a; }
   line-height: 1.6;
   font-weight: 300;
   max-width: 520px;
+}
+
+.hero-mockup {
+   width: 100%;
+   max-width: 600px;
+   height: auto;
+   justify-self: center;
 }
 
 /* ════════════════════════════════════════
@@ -670,6 +681,7 @@ strong { font-weight: 500; color: #1a1a1a; }
 
   .hero-content {
     padding: 64px 40px 88px;
+     grid-template-columns: 1fr;
   }
 
   .about-content,
