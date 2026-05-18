@@ -762,7 +762,7 @@ strong { font-weight: 500; color: #1a1a1a; }
   .about-content .title-accent { order: 2; }
   .about-portrait {
          order: 3;
-         max-width: 200px;
+         max-width: 300px;
          margin: 16px auto 8px;
   }
   .about-portrait img {
