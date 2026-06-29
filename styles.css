@@ -110,7 +110,7 @@ strong { font-weight: 500; color: #1a1a1a; }
 }
 
 .logo { display: flex; align-items: center; }
-.logo-img { height: 56px; width: auto; object-fit: contain; }
+.logo-img { height: 100px; width: auto; object-fit: contain; }
 
 .site-nav {
   display: flex;
@@ -716,7 +716,7 @@ strong { font-weight: 500; color: #1a1a1a; }
     padding: 18px 20px;
   }
 
-  .logo-img { height: 24px; }
+  .logo-img { height: 60px; }
 
   .site-nav {
     gap: 14px;
