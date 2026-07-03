@@ -386,6 +386,64 @@ strong { font-weight: 500; color: #1a1a1a; }
 }
 
 /* ════════════════════════════════════════
+   TESTIMONIALS
+   ════════════════════════════════════════ */
+.testimonials {
+  padding: 0 72px 72px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: #fafafa;
+  border: 1px solid #f0f0f0;
+  border-radius: 16px;
+  padding: 44px 56px;
+  text-align: center;
+  animation: fadeInUp 0.6s ease both;
+}
+
+.testimonial-quote {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.testimonial-author span {
+  font-weight: 400;
+  color: #888;
+}
+
+@media (max-width: 900px) {
+  .testimonials {
+    padding: 0 40px 56px;
+  }
+
+  .testimonial-card {
+    padding: 32px 28px;
+  }
+}
+
+@media (max-width: 580px) {
+  .testimonials {
+    padding: 0 20px 48px;
+  }
+
+  .testimonial-quote {
+    font-size: 16px;
+  }
+}
+
+/* ════════════════════════════════════════
    ABOUT PAGE
    ════════════════════════════════════════ */
 .about-content {
