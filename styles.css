@@ -609,6 +609,31 @@ strong { font-weight: 500; color: #1a1a1a; }
         .contact-form-col { padding-top: 0; }
      }
 }
+/* ── Direct email ── */
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 26px;
+  padding-bottom: 4px;
+  background-image: linear-gradient(90deg, #C4A882 0%, #7BA3B3 52%, #9BB87A 100%);
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: opacity 0.2s;
+}
+
+.contact-email:hover { opacity: 0.65; }
+
+.contact-email svg { color: #999; flex-shrink: 0; }
+
+@media (max-width: 580px) {
+  .contact-email { font-size: 17px; gap: 8px; }
+}
+
 .contact-links {
   display: flex;
   gap: 16px;
@@ -738,6 +763,7 @@ strong { font-weight: 500; color: #1a1a1a; }
 
 .footer-links a {
   cursor: pointer;
+  color: #6b6b6b;
   transition: color 0.2s;
 }
 
