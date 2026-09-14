@@ -157,9 +157,39 @@ strong { font-weight: 500; color: #1a1a1a; }
 
 .hero-content.hidden { display: none; }
 
+/* ── Hero call to action ── */
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 30px;
+  padding: 14px 30px;
+  border-radius: 100px;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.hero-cta:hover {
+  background: #333;
+  transform: translateY(-1px);
+}
+
+.hero-cta svg { transition: transform 0.2s; }
+.hero-cta:hover svg { transform: translateX(3px); }
+
+@media (max-width: 580px) {
+  .hero-cta { margin-top: 24px; padding: 13px 26px; }
+}
+
+html { scroll-behavior: smooth; }
+
 .hero-title {
   font-family: 'Outfit', sans-serif;
-  font-size: 56px;
+  /* fluid so the headline stays two lines from 900px up to full width */
+  font-size: clamp(36px, calc((100vw - 208px) / 20), 56px);
   font-weight: 700;
   line-height: 1.08;
   letter-spacing: -1.5px;
