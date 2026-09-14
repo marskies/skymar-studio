@@ -234,6 +234,26 @@ html { scroll-behavior: smooth; }
 }
 
 /* ════════════════════════════════════════
+   WORK SECTION HEADING
+   ════════════════════════════════════════ */
+.work-header {
+  padding: 8px 72px 4px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.work-header .title-accent { margin: 18px 0 32px; }
+
+@media (max-width: 900px) {
+  .work-header { padding: 8px 40px 4px; }
+}
+
+@media (max-width: 580px) {
+  .work-header { padding: 4px 20px 0; }
+  .work-header .title-accent { margin: 14px 0 26px; }
+}
+
+/* ════════════════════════════════════════
    PROJECTS GRID
    ════════════════════════════════════════ */
 .projects-grid {
@@ -243,6 +263,16 @@ html { scroll-behavior: smooth; }
   gap: 40px;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+/* Exactly four cards would leave one orphan in a three-column row,
+   so pair them 2x2 instead. Reverts automatically at five or more.
+   Desktop only: the tablet and mobile rules below already handle those. */
+@media (min-width: 901px) {
+  .projects-grid:has(> :nth-child(4):last-child) {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1120px;
+  }
 }
 
 .project-card {
