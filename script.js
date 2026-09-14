@@ -60,6 +60,8 @@ document.addEventListener('DOMContentLoaded', function () {
             form.style.display = 'none';
             successMsg.style.display = 'block';
             form.reset();
+            // Analytics: a real inquiry, not just a visit.
+            if (window.umami) window.umami.track('contact-form-submit');
           } else {
             alert('Oops! Something went wrong. Please try again.');
           }
