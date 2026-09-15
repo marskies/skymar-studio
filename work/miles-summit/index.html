@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miles Summit case study | Sky &amp; Mar Studio</title>
+  <meta name="description" content="A website for a 55+ apartment community that hadn't been built yet. How the site earned leasing inquiries for a building nobody could walk into." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="canonical" href="https://skymar.studio/work/miles-summit/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://skymar.studio/work/miles-summit/" />
+  <meta property="og:site_name" content="Sky &amp; Mar Studio" />
+  <meta property="og:title" content="Miles Summit | Sky &amp; Mar Studio case study" />
+  <meta property="og:description" content="A website for a 55+ apartment community that hadn't been built yet. For four and a half months, the website was the only way to see it." />
+  <meta property="og:image" content="https://skymar.studio/work/miles-summit/ms-og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="The Miles Summit homepage, designed by Sky &amp; Mar Studio." />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Miles Summit | Sky &amp; Mar Studio case study" />
+  <meta name="twitter:description" content="A website for a 55+ apartment community that hadn't been built yet. For four and a half months, the website was the only way to see it." />
+  <meta name="twitter:image" content="https://skymar.studio/work/miles-summit/ms-og.jpg" />
+
+  <link rel="icon" href="/favicon.ico?v=3" sizes="32x32" />
+  <link rel="icon" href="/favicon-32.png?v=3" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3" />
+
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="8bc906e3-94e6-432e-8a2b-bb68f681818d"></script>
+
+  <style>
+    /* ── Case study page. Scoped so nothing here can affect the homepage. ── */
+    .cs-wrap { max-width: 1400px; margin: 0 auto; padding: 0 72px; }
+    .cs-narrow { max-width: 720px; }
+
+    .cs-back {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 13px; font-weight: 500; color: #6b6b6b;
+      padding: 40px 0 0; transition: color .2s;
+    }
+    .cs-back:hover { color: #1a1a1a; }
+    .cs-back svg { transition: transform .2s; }
+    .cs-back:hover svg { transform: translateX(-3px); }
+
+    .cs-eyebrow {
+      font-size: 11px; font-weight: 600; letter-spacing: 1.4px;
+      text-transform: uppercase; color: #999; margin-bottom: 16px;
+    }
+
+    .cs-title {
+      font-family: 'Outfit', sans-serif; font-weight: 700;
+      font-size: clamp(38px, calc((100vw - 208px) / 18), 58px);
+      line-height: 1.05; letter-spacing: -1.5px; margin-bottom: 20px;
+    }
+    .cs-standfirst {
+      font-size: 20px; line-height: 1.65; font-weight: 300; color: #555;
+      max-width: 640px;
+    }
+
+    .cs-head { padding: 34px 0 40px; }
+
+    /* Fact strip */
+    .cs-facts {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 1px; background: #f0f0f0;
+      border-top: 1px solid #f0f0f0; border-bottom: 1px solid #f0f0f0;
+      margin: 44px 0 0;
+    }
+    .cs-fact { background: #fff; padding: 22px 24px 24px; }
+    .cs-fact dt {
+      font-size: 10.5px; font-weight: 600; letter-spacing: 1.1px;
+      text-transform: uppercase; color: #999; margin-bottom: 8px;
+    }
+    .cs-fact dd { font-size: 15px; color: #1a1a1a; line-height: 1.5; font-weight: 400; }
+    .cs-fact dd a { border-bottom: 1px solid #d6d6d6; }
+    .cs-fact dd a:hover { border-bottom-color: #1a1a1a; }
+
+    /* Sections */
+    .cs-section { padding: 72px 0 0; }
+    .cs-h2 {
+      font-family: 'Outfit', sans-serif; font-size: 30px; font-weight: 600;
+      letter-spacing: -0.6px; line-height: 1.2; margin-bottom: 18px;
+    }
+    .cs-body p {
+      font-size: 17px; line-height: 1.8; color: #555; font-weight: 300;
+      margin-bottom: 18px;
+    }
+    .cs-body p strong { font-weight: 500; color: #1a1a1a; }
+    .cs-body p:last-child { margin-bottom: 0; }
+
+    /* Pull statement */
+    .cs-pull {
+      margin: 56px 0 0; padding: 44px 56px;
+      background: #fafafa; border: 1px solid #f0f0f0; border-radius: 16px;
+    }
+    .cs-pull p {
+      font-family: 'Outfit', sans-serif; font-size: 27px; font-weight: 500;
+      line-height: 1.35; letter-spacing: -0.5px; color: #1a1a1a;
+    }
+    .cs-pull .cs-pull-note {
+      font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 300;
+      color: #888; line-height: 1.7; margin-top: 16px; letter-spacing: 0;
+    }
+
+    /* Decision cards */
+    .cs-decisions { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 34px; }
+    .cs-decision {
+      border: 1px solid #f0f0f0; border-radius: 14px; padding: 28px 30px 30px;
+      background: #fff;
+    }
+    .cs-decision .cs-accent {
+      width: 34px; height: 3px; border-radius: 2px; margin-bottom: 18px;
+      background: linear-gradient(90deg, #C4A882, #7BA3B3, #9BB87A);
+    }
+    .cs-decision h3 {
+      font-family: 'Outfit', sans-serif; font-size: 17.5px; font-weight: 600;
+      line-height: 1.35; margin-bottom: 10px; letter-spacing: -0.2px;
+    }
+    .cs-decision p { font-size: 15px; line-height: 1.7; color: #666; font-weight: 300; }
+
+    /* Figures */
+    .cs-figure { margin-top: 40px; }
+    .cs-shot {
+      border: 1px solid #ececec; border-radius: 12px; overflow: hidden;
+      background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.03), 0 12px 32px rgba(0,0,0,.05);
+    }
+    .cs-shot img { width: 100%; height: auto; }
+    .cs-caption {
+      font-size: 13.5px; line-height: 1.65; color: #8a8a8a; font-weight: 300;
+      margin-top: 14px; max-width: 640px;
+    }
+
+    .cs-split { display: grid; grid-template-columns: 1.55fr 1fr; gap: 28px; align-items: start; margin-top: 40px; }
+    .cs-phone { max-width: 310px; margin: 0 auto; }
+    .cs-phone .cs-shot { border-radius: 22px; }
+
+    /* Timeline */
+    .cs-timeline { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 34px; }
+    .cs-step { border-top: 2px solid #1a1a1a; padding-top: 16px; }
+    .cs-step .cs-when {
+      font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 600;
+      letter-spacing: -0.3px; margin-bottom: 6px;
+    }
+    .cs-step p { font-size: 14.5px; line-height: 1.65; color: #666; font-weight: 300; }
+
+    /* Stack */
+    .cs-stack { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 24px; }
+    .cs-chip {
+      font-size: 12.5px; font-weight: 500; color: #555;
+      padding: 7px 15px; border-radius: 100px; background: #f6f6f6;
+    }
+
+    .cs-stack-label { font-size: 13px; color: #8a8a8a; font-weight: 300; margin-top: 30px; }
+    .cs-stack { margin-top: 12px; }
+
+    /* Closing CTA */
+    .cs-cta {
+      margin: 80px 0 0; padding: 60px 56px 64px; text-align: center;
+      border-top: 1px solid #f0f0f0;
+    }
+    .cs-cta h2 {
+      font-family: 'Outfit', sans-serif; font-size: 32px; font-weight: 700;
+      letter-spacing: -0.8px; margin-bottom: 14px;
+    }
+    .cs-cta p { font-size: 17px; color: #555; font-weight: 300; line-height: 1.7; margin-bottom: 30px; }
+    .cs-btn-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .cs-btn {
+      display: inline-flex; align-items: center; gap: 9px;
+      padding: 14px 30px; border-radius: 100px; font-size: 14px; font-weight: 600;
+      background: #1a1a1a; color: #fff; transition: all .2s;
+    }
+    .cs-btn:hover { background: #333; transform: translateY(-1px); }
+    .cs-btn svg { transition: transform .2s; }
+    .cs-btn:hover svg { transform: translateX(3px); }
+    .cs-btn--ghost { background: #fff; color: #1a1a1a; border: 1px solid #e0e0e0; }
+    .cs-btn--ghost:hover { background: #fafafa; border-color: #c8c8c8; }
+
+    @media (max-width: 900px) {
+      .cs-wrap { padding: 0 40px; }
+      .cs-facts { grid-template-columns: repeat(2, 1fr); }
+      .cs-decisions { grid-template-columns: 1fr; }
+      .cs-split { grid-template-columns: 1fr; }
+      .cs-timeline { grid-template-columns: 1fr; gap: 24px; }
+      .cs-pull { padding: 36px 34px; }
+      .cs-pull p { font-size: 23px; }
+      .cs-section { padding: 56px 0 0; }
+      .cs-cta { padding: 52px 0 56px; }
+    }
+    @media (max-width: 580px) {
+      .cs-wrap { padding: 0 24px; }
+      .cs-facts { grid-template-columns: 1fr; }
+      .cs-standfirst { font-size: 18px; }
+      .cs-h2 { font-size: 25px; }
+      .cs-pull { padding: 30px 26px; }
+      .cs-pull p { font-size: 20px; }
+      .cs-cta h2 { font-size: 26px; }
+      .cs-btn-row { flex-direction: column; }
+      .cs-btn { justify-content: center; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .cs-back svg, .cs-btn, .cs-btn svg { transition: none; }
+    }
+  </style>
+</head>
+<body id="top">
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="/" class="logo">
+      <img src="/Sky%26Mar-logo-1-transp.png" alt="Sky &amp; Mar Studio" class="logo-img" />
+    </a>
+    <nav class="site-nav">
+      <a href="/#work" class="nav-link">Work</a>
+      <a href="/#about" class="nav-link">About</a>
+      <a href="/#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="cs-wrap">
+      <a href="/#work" class="cs-back" data-umami-event="cs-back">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+        All work
+      </a>
+
+      <!-- Title -->
+      <div class="cs-head">
+        <p class="cs-eyebrow">Case study</p>
+        <h1 class="cs-title">Miles Summit</h1>
+        <p class="cs-standfirst">
+          A website for a 55+ apartment community that hadn't been built yet.
+        </p>
+      </div>
+
+      <!-- Facts -->
+      <dl class="cs-facts">
+        <div class="cs-fact">
+          <dt>Client</dt>
+          <dd>Miles Summit, a Parasole company</dd>
+        </div>
+        <div class="cs-fact">
+          <dt>Scope</dt>
+          <dd>Six-page website, designed and built</dd>
+        </div>
+        <div class="cs-fact">
+          <dt>Launched</dt>
+          <dd>April 2026, a day ahead of schedule</dd>
+        </div>
+        <div class="cs-fact">
+          <dt>Live at</dt>
+          <dd><a href="https://milessummit.com" target="_blank" rel="noopener" data-umami-event="cs-live-site">milessummit.com</a></dd>
+        </div>
+      </dl>
+
+      <!-- The constraint -->
+      <section class="cs-section">
+        <div class="cs-narrow">
+          <h2 class="cs-h2">The problem</h2>
+          <div class="cs-body">
+            <p>
+              Miles Summit is a 25-unit community for residents 55 and over, in Clarks Summit,
+              Pennsylvania. When the project started, it was a construction site. No model unit,
+              no leasing office, nothing to walk through.
+            </p>
+            <p>
+              That is harder than it sounds. A prospective resident deciding where to
+              spend the next chapter of their life normally makes that decision in person. Here,
+              they had to make it from a phone, months before a door existed to open.
+            </p>
+          </div>
+        </div>
+
+        <div class="cs-pull">
+          <p>For four and a half months, the website was the only way to see Miles Summit.</p>
+          <p class="cs-pull-note">
+            It went live in late April, ahead of the building. Everything an interested buyer could
+            learn, they learned here first.
+          </p>
+        </div>
+      </section>
+
+      <!-- Decisions -->
+      <section class="cs-section">
+        <div class="cs-narrow">
+          <h2 class="cs-h2">Four decisions, and why</h2>
+          <div class="cs-body">
+            <p>
+              Every choice on the site answers the same question: how does someone get
+              confident about a place they cannot visit?
+            </p>
+          </div>
+        </div>
+
+        <div class="cs-decisions">
+          <div class="cs-decision">
+            <div class="cs-accent"></div>
+            <h3>Floor plans do the work a tour would</h3>
+            <p>
+              Not pretty sketches. The real architect's drawings, with every apartment labeled, its
+              actual square footage, and what comes with it. Someone can pick the apartment they
+              want, instead of just deciding they like the building.
+            </p>
+          </div>
+          <div class="cs-decision">
+            <div class="cs-accent"></div>
+            <h3>Three ways to get in touch, before you scroll</h3>
+            <p>
+              Join the waitlist, schedule a tour, or send a text. People get in touch the way they
+              are already comfortable. Making someone hunt for the one option the site prefers
+              loses you inquiries.
+            </p>
+          </div>
+          <div class="cs-decision">
+            <div class="cs-accent"></div>
+            <h3>Readable first, decorative second</h3>
+            <p>
+              Text a size up from the usual, and a soft shade behind anything written over a photo,
+              so the headline never has to compete with the sky behind it. The people reading this
+              are 55 and over and mostly on a phone. Looking good on a big designer monitor is not
+              the test.
+            </p>
+          </div>
+          <div class="cs-decision">
+            <div class="cs-accent"></div>
+            <h3>Built so they would not need me</h3>
+            <p>
+              Built with the same common tools thousands of other sites run on, plus a written
+              guide to the whole thing. Nothing homemade that only I would understand. A site you
+              can only change by calling the person who made it is not really yours.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- What shipped -->
+      <section class="cs-section">
+        <div class="cs-narrow">
+          <h2 class="cs-h2">What's on the site</h2>
+          <div class="cs-body">
+            <p>
+              Six pages: home, about, floor plans, construction updates, news and press, and
+              contact. Built on WordPress so the team could keep it current without me.
+            </p>
+          </div>
+        </div>
+
+        <figure class="cs-figure">
+          <div class="cs-shot">
+            <img src="ms-hero.jpg" alt="The Miles Summit homepage: a photograph of the building at dusk, a NOW PRE-LEASING label, the headline Experience the summit of 55+ living, and three buttons to join the waitlist, schedule a tour, or send a text." loading="lazy" decoding="async" />
+          </div>
+          <figcaption class="cs-caption">
+            The homepage the day it launched. A picture of the building, the leasing status, the
+            headline, and three ways to get in touch, all before you scroll.
+          </figcaption>
+        </figure>
+
+        <figure class="cs-figure">
+          <div class="cs-shot">
+            <img src="ms-floorplans.jpg" alt="The floor plans section: full architectural drawings for the one and two bedroom layouts, with unit codes, bed and bath counts, square footages, and included features." loading="lazy" decoding="async" />
+          </div>
+          <figcaption class="cs-caption">
+            Six apartment types across two layouts, from 817 to 1,436 square feet, each with the
+            real drawing attached. It is the closest thing to a walkthrough you can give someone
+            before the building exists.
+          </figcaption>
+        </figure>
+
+        <div class="cs-split">
+          <figure style="margin:0;">
+            <div class="cs-shot">
+              <img src="ms-amenities.jpg" alt="The amenities section on a deep navy background, listing the rooftop deck, outdoor kitchen, gas fire pit, wellness center, community garden, dog park, coffee station, and walking track." loading="lazy" decoding="async" />
+            </div>
+            <figcaption class="cs-caption">
+              Amenities in one dark block, so the section people go looking for is impossible to
+              scroll past.
+            </figcaption>
+          </figure>
+          <figure class="cs-phone" style="margin:0;">
+            <div class="cs-shot">
+              <img src="ms-mobile.jpg" alt="The Miles Summit site on an iPhone, showing large readable body type and a quote from the developer." loading="lazy" decoding="async" />
+            </div>
+            <figcaption class="cs-caption">
+              The same page on a phone, where most of this audience actually reads it.
+            </figcaption>
+          </figure>
+        </div>
+
+        <p class="cs-stack-label">Built with tools any web developer already knows:</p>
+        <div class="cs-stack">
+          <span class="cs-chip">WordPress</span>
+          <span class="cs-chip">Astra</span>
+          <span class="cs-chip">Elementor</span>
+          <span class="cs-chip">WPForms</span>
+          <span class="cs-chip">Yoast SEO</span>
+          <span class="cs-chip">Bluehost</span>
+        </div>
+      </section>
+
+      <!-- Timeline -->
+      <section class="cs-section">
+        <div class="cs-narrow">
+          <h2 class="cs-h2">The schedule</h2>
+        </div>
+        <div class="cs-timeline">
+          <div class="cs-step">
+            <div class="cs-when">March 24</div>
+            <p>Contract signed. Sitemap, wireframes, and design direction first.</p>
+          </div>
+          <div class="cs-step">
+            <div class="cs-when">April 29</div>
+            <p>Site live, one day ahead of the contracted launch date.</p>
+          </div>
+          <div class="cs-step">
+            <div class="cs-when">May 11</div>
+            <p>Documentation guide delivered, with 30 days of post-launch support.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Handoff -->
+      <section class="cs-section">
+        <div class="cs-narrow">
+          <h2 class="cs-h2">The handoff</h2>
+          <div class="cs-body">
+            <p>
+              Handing over a site that nobody on the team can update is not finishing the job.
+              Miles Summit came with a written guide: every page, where each piece of text lives,
+              how the inquiry form works, and who hosts what.
+            </p>
+            <p>
+              <strong>Any WordPress developer can pick this up tomorrow.</strong> That is the
+              point.
+            </p>
+          </div>
+        </div>
+        <figure class="cs-figure">
+          <div class="cs-shot" style="padding:8px;">
+            <img src="ms-docs.jpg" alt="A page from the site documentation guide: a table listing each page of the site and its purpose." loading="lazy" decoding="async" />
+          </div>
+          <figcaption class="cs-caption">
+            One page of the documentation guide delivered at handoff.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Testimonial -->
+      <section class="cs-section">
+        <div class="testimonials" style="padding:0; margin-top:16px;">
+          <div class="testimonial-card">
+            <p class="testimonial-eyebrow">From the client</p>
+            <p class="testimonial-quote">&ldquo;We needed a website that would give our 55+ community a credible presence for leasing inquiries before construction was even finished, and Marina delivered beautifully. She understood the real estate side, handled the entire project end to end, and was responsive and easy to work with the whole way through. The result is polished, professional, and exactly the first impression we wanted to make.&rdquo;</p>
+            <p class="testimonial-author">&mdash; Jessica DeNinno, <span>Parasole Properties</span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cs-cta">
+        <h2>Have something that isn't built yet?</h2>
+        <p>Building something people cannot see yet is the problem I know best.</p>
+        <div class="cs-btn-row">
+          <a href="/#contact" class="cs-btn" data-umami-event="cs-cta-contact">
+            Start a project
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="https://milessummit.com" target="_blank" rel="noopener" class="cs-btn cs-btn--ghost" data-umami-event="cs-visit-site">Visit the live site</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2026 Sky &amp; Mar Studio LLC</span>
+    <div class="footer-links">
+      <a href="mailto:marina@skymar.studio" data-umami-event="email-footer">marina@skymar.studio</a>
+      <a href="https://linkedin.com/in/marinadiponio" target="_blank" rel="noreferrer">LinkedIn</a>
+    </div>
+  </footer>
+
+</body>
+</html>
