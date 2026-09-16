@@ -121,7 +121,17 @@ function applyScrollAnimation(img, index) {
   style.textContent = keyframes;
   document.head.appendChild(style);
 
+  // Every card used to run at a fixed 14s regardless of how tall its capture is,
+  // so a 12,656px screenshot travelled ~3x the distance of a 4,339px one in the
+  // same time and read as much faster. Scale the duration to the distance instead,
+  // so all cards scroll at the same perceived speed.
+  var scrollDistance = Math.max(renderedHeight - viewportHeight, 0);
+  var PX_PER_SECOND = 230;    // roughly what the shorter cards were already doing
+  var ACTIVE_FRACTION = 0.42; // the keyframes only travel during 0% to 42%
+  var duration = scrollDistance / PX_PER_SECOND / ACTIVE_FRACTION;
+  duration = Math.min(Math.max(duration, 14), 32);   // 14s floor keeps the shorter cards exactly as they were
+
   // Apply the animation to this image
-  img.style.animation = animName + ' 14s linear infinite';
+  img.style.animation = animName + ' ' + duration.toFixed(1) + 's linear infinite';
   img.style.animationDelay = (index * 1.5) + 's';
 }
