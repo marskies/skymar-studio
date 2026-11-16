@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parasole Properties case study | Sky &amp; Mar Studio</title>
+  <meta name="description" content="A rental website for a Scranton property manager that does the first step of every showing: renters prequalify, and the office gets the request with every answer attached." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="canonical" href="https://skymar.studio/work/parasole/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://skymar.studio/work/parasole/" />
+  <meta property="og:site_name" content="Sky &amp; Mar Studio" />
+  <meta property="og:title" content="Parasole Properties | Sky &amp; Mar Studio case study" />
+  <meta property="og:description" content="A rental website that does the first step of a showing for the office. Renters find out if a home fits; the office gets the request with every answer attached." />
+  <meta property="og:image" content="https://skymar.studio/work/parasole/pp-og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="The Parasole Properties homepage, designed by Sky &amp; Mar Studio." />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Parasole Properties | Sky &amp; Mar Studio case study" />
+  <meta name="twitter:description" content="A rental website that does the first step of a showing for the office. Renters find out if a home fits; the office gets the request with every answer attached." />
+  <meta name="twitter:image" content="https://skymar.studio/work/parasole/pp-og.jpg" />
+
+  <link rel="icon" href="/favicon.ico?v=3" sizes="32x32" />
+  <link rel="icon" href="/favicon-32.png?v=3" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3" />
+
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="8bc906e3-94e6-432e-8a2b-bb68f681818d"></script>
+
+  <style>
+    /* ── Case study page. Scoped so nothing here can affect the homepage. ── */
+    .cs-wrap { max-width: 1400px; margin: 0 auto; padding: 0 72px; }
+    .cs-narrow { max-width: 720px; }
+
+    .cs-back {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 13px; font-weight: 500; color: #6b6b6b;
+      padding: 40px 0 0; transition: color .2s;
+    }
+    .cs-back:hover { color: #1a1a1a; }
+    .cs-back svg { transition: transform .2s; }
+    .cs-back:hover svg { transform: translateX(-3px); }
+
+    .cs-eyebrow {
+      font-size: 11px; font-weight: 600; letter-spacing: 1.4px;
+      text-transform: uppercase; color: #999; margin-bottom: 16px;
+    }
+
+    .cs-title {
+      font-family: 'Outfit', sans-serif; font-weight: 700;
+      font-size: clamp(38px, calc((100vw - 208px) / 18), 58px);
+      line-height: 1.05; letter-spacing: -1.5px; margin-bottom: 20px;
+    }
+    .cs-standfirst {
+      font-size: 20px; line-height: 1.65; font-weight: 300; color: #555;
+      max-width: 640px;
+    }
+
+    .cs-head { padding: 34px 0 40px; }
+
+    /* Fact strip */
+    .cs-facts {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 1px; background: #f0f0f0;
+      border-top: 1px solid #f0f0f0; border-bottom: 1px solid #f0f0f0;
+      margin: 44px 0 0;
+    }
+    .cs-fact { background: #fff; padding: 22px 24px 24px; }
+    .cs-fact dt {
+      font-size: 10.5px; font-weight: 600; letter-spacing: 1.1px;
+      text-transform: uppercase; color: #999; margin-bottom: 8px;
+    }
+    .cs-fact dd { font-size: 15px; color: #1a1a1a; line-height: 1.5; font-weight: 400; }
+    .cs-fact dd a { border-bottom: 1px solid #d6d6d6; }
+    .cs-fact dd a:hover { border-bottom-color: #1a1a1a; }
+
+    /* Sections */
+    .cs-section { padding: 72px 0 0; }
+    .cs-h2 {
+      font-family: 'Outfit', sans-serif; font-size: 30px; font-weight: 600;
+      letter-spacing: -0.6px; line-height: 1.2; margin-bottom: 18px;
+    }
+    .cs-body p {
+      font-size: 17px; line-height: 1.8; color: #555; font-weight: 300;
+      margin-bottom: 18px;
+    }
+    .cs-body p strong { font-weight: 500; color: #1a1a1a; }
+    .cs-body p:last-child { margin-bottom: 0; }
+
+    /* Pull statement */
+    .cs-pull {
+      margin: 56px 0 0; padding: 44px 56px;
+      background: #fafafa; border: 1px solid #f0f0f0; border-radius: 16px;
+    }
+    .cs-pull p {
+      font-family: 'Outfit', sans-serif; font-size: 27px; font-weight: 500;
+      line-height: 1.35; letter-spacing: -0.5px; color: #1a1a1a;
+    }
+    .cs-pull .cs-pull-note {
+      font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 300;
+      color: #888; line-height: 1.7; margin-top: 16px; letter-spacing: 0;
+    }
+
+    /* Decision cards */
+    .cs-decisions { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 34px; }
+    .cs-decision {
+      border: 1px solid #f0f0f0; border-radius: 14px; padding: 28px 30px 30px;
+      background: #fff;
+    }
+    .cs-decision .cs-accent {
+      width: 34px; height: 3px; border-radius: 2px; margin-bottom: 18px;
+      background: linear-gradient(90deg, #C4A882, #7BA3B3, #9BB87A);
+    }
+    .cs-decision h3 {
+      font-family: 'Outfit', sans-serif; font-size: 17.5px; font-weight: 600;
+      line-height: 1.35; margin-bottom: 10px; letter-spacing: -0.2px;
+    }
+    .cs-decision p { font-size: 15px; line-height: 1.7; color: #666; font-weight: 300; }
+
+    /* Figures */
+    .cs-figure { margin-top: 40px; max-width: 760px; }
+    .cs-shot {
+      border: 1px solid #ececec; border-radius: 12px; overflow: hidden;
+      background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.03), 0 12px 32px rgba(0,0,0,.05);
+    }
+    .cs-shot img { width: 100%; height: auto; }
+    .cs-caption {
+      font-size: 13.5px; line-height: 1.65; color: #8a8a8a; font-weight: 300;
+      margin-top: 14px; max-width: 640px;
+    }
+
+    .cs-split { display: grid; grid-template-columns: 1.5fr 0.8fr; gap: 30px; align-items: start; margin-top: 40px; max-width: 880px; }
+    .cs-phone { max-width: 240px; margin: 0 auto; }
+    .cs-phone .cs-shot { border-radius: 22px; }
+
+    /* Timeline */
+    .cs-timeline { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 34px; }
+    .cs-step { border-top: 2px solid #1a1a1a; padding-top: 16px; }
+    .cs-step .cs-when {
+      font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 600;
+      letter-spacing: -0.3px; margin-bottom: 6px;
+    }
+    .cs-step p { font-size: 14.5px; line-height: 1.65; color: #666; font-weight: 300; }
+
+    /* Stack */
+    .cs-stack { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 24px; }
+    .cs-chip {
+      font-size: 12.5px; font-weight: 500; color: #555;
+      padding: 7px 15px; border-radius: 100px; background: #f6f6f6;
+    }
+
+    .cs-stack-label { font-size: 13px; color: #8a8a8a; font-weight: 300; margin-top: 30px; }
+    .cs-stack { margin-top: 12px; }
+
+    .cs-track { margin-top: 30px; }
+
+    /* Wide SVG diagrams are unreadable once scaled onto a phone, so below 900px
+       they are replaced by real HTML at real text sizes. */
+    .cs-mobdiag, .cs-vtime { display: none; }
+
+    .cs-mobdiag .md-row {
+      border-left: 3px solid #e6e3de; padding: 2px 0 2px 16px; margin-bottom: 18px;
+    }
+    .cs-mobdiag b {
+      display: block; font-family: 'Outfit', sans-serif; font-size: 16px;
+      font-weight: 600; color: #1a1a1a; margin-bottom: 3px;
+    }
+    .cs-mobdiag i {
+      font-style: normal; font-size: 14px; color: #7a7a7a; font-weight: 300;
+    }
+    .cs-mobdiag .md-all {
+      border-left: 3px solid #7BA3B3; background: #f2f7f9;
+      border-radius: 0 10px 10px 0; padding: 16px 18px; margin-top: 22px;
+    }
+    .cs-mobdiag .md-all b { color: #2e5d6d; }
+    .cs-mobdiag .md-all i { color: #5c8494; font-size: 14.5px; line-height: 1.55; }
+
+    .cs-vtime { list-style: none; margin: 8px 0 0; padding: 0; }
+    .cs-vtime li {
+      position: relative; padding: 0 0 22px 24px;
+      border-left: 2px solid #e6e3de;
+    }
+    .cs-vtime li:last-child { border-left-color: transparent; padding-bottom: 0; }
+    .cs-vtime li::before {
+      content: ''; position: absolute; left: -7px; top: 4px;
+      width: 12px; height: 12px; border-radius: 50%;
+      background: #1a1a1a; box-shadow: 0 0 0 3px #fff;
+    }
+    .cs-vtime li:nth-child(2)::before { background: #7BA3B3; }
+    .cs-vtime b {
+      display: block; font-family: 'Outfit', sans-serif; font-size: 18px;
+      font-weight: 600; margin-bottom: 4px;
+    }
+    .cs-vtime i { font-style: normal; font-size: 14px; color: #6b6b6b; font-weight: 300; line-height: 1.6; }
+
+    @media (max-width: 980px) {
+      .cs-diagram svg.cs-svg-wide { display: none; }
+      .cs-mobdiag, .cs-vtime { display: block; }
+      .cs-diagram { margin-top: 30px; }
+    }
+
+
+    /* Explanatory diagram */
+    .cs-diagram { margin-top: 44px; max-width: 880px; }
+    .cs-diagram svg { width: 100%; height: auto; display: block; color: #1a1a1a; }
+
+    /* Annotated figure: screenshot with pins + numbered notes beside it */
+    .cs-annotated {
+      display: grid; grid-template-columns: minmax(0,1fr) 300px;
+      gap: 36px; align-items: start; margin-top: 40px; max-width: 1020px;
+    }
+    .cs-annotated .cs-shot { position: relative; }
+    .cs-pin {
+      position: absolute; transform: translate(-50%,-50%);
+      width: 27px; height: 27px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 700;
+      color: #fff; background: #1a1a1a; letter-spacing: 0;
+      box-shadow: 0 0 0 3px rgba(255,255,255,.95), 0 2px 7px rgba(0,0,0,.3);
+    }
+    .cs-notes { list-style: none; margin: 0; padding: 0; }
+    .cs-notes li { display: flex; gap: 13px; padding-bottom: 22px; }
+    .cs-notes li:last-child { padding-bottom: 0; }
+    .cs-note-n {
+      flex: 0 0 23px; height: 23px; border-radius: 50%; margin-top: 1px;
+      background: #1a1a1a; color: #fff;
+      font-family: 'Outfit', sans-serif; font-size: 12px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .cs-notes b {
+      display: block; font-family: 'Outfit', sans-serif; font-size: 14.5px;
+      font-weight: 600; color: #1a1a1a; margin-bottom: 5px; line-height: 1.3;
+    }
+    .cs-notes i {
+      font-style: normal; font-size: 13.5px; line-height: 1.6;
+      color: #6b6b6b; font-weight: 300;
+    }
+
+    /* Tinted panel behind the decision cards */
+    .cs-panel {
+      background: linear-gradient(180deg, #fbfaf8 0%, #fdfdfc 100%);
+      border: 1px solid #f1eee9; border-radius: 20px;
+      padding: 40px 40px 44px; margin-top: 34px;
+    }
+    .cs-panel .cs-decisions { margin-top: 0; }
+    .cs-panel .cs-decision { border-color: #efece7; }
+
+    /* Closing CTA */
+    .cs-cta {
+      margin: 80px 0 0; padding: 60px 56px 64px; text-align: center;
+      border-top: 1px solid #f0f0f0;
+    }
+    .cs-cta h2 {
+      font-family: 'Outfit', sans-serif; font-size: 32px; font-weight: 700;
+      letter-spacing: -0.8px; margin-bottom: 14px;
+    }
+    .cs-cta p { font-size: 17px; color: #555; font-weight: 300; line-height: 1.7; margin-bottom: 30px; }
+    .cs-btn-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .cs-btn {
+      display: inline-flex; align-items: center; gap: 9px;
+      padding: 14px 30px; border-radius: 100px; font-size: 14px; font-weight: 600;
+      background: #1a1a1a; color: #fff; transition: all .2s;
+    }
+    .cs-btn:hover { background: #333; transform: translateY(-1px); }
+    .cs-btn svg { transition: transform .2s; }
+    .cs-btn:hover svg { transform: translateX(3px); }
+    .cs-btn--ghost { background: #fff; color: #1a1a1a; border: 1px solid #e0e0e0; }
+    .cs-btn--ghost:hover { background: #fafafa; border-color: #c8c8c8; }
+
+    @media (max-width: 900px) {
+      .cs-wrap { padding: 0 40px; }
+      .cs-facts { grid-template-columns: repeat(2, 1fr); }
+      .cs-decisions { grid-template-columns: 1fr; }
+      .cs-annotated { grid-template-columns: 1fr; gap: 26px; }
+      .cs-panel { padding: 28px 22px 32px; }
+      .cs-split { grid-template-columns: 1fr; }
+      .cs-timeline { grid-template-columns: 1fr; gap: 24px; }
+      .cs-pull { padding: 36px 34px; }
+      .cs-pull p { font-size: 23px; }
+      .cs-section { padding: 56px 0 0; }
+      .cs-cta { padding: 52px 0 56px; }
+    }
+    @media (max-width: 580px) {
+      .cs-wrap { padding: 0 24px; }
+      .cs-facts { grid-template-columns: 1fr; }
+      .cs-pin { width: 22px; height: 22px; font-size: 11px; }
+      .cs-standfirst { font-size: 18px; }
+      .cs-h2 { font-size: 25px; }
+      .cs-pull { padding: 30px 26px; }
+      .cs-pull p { font-size: 20px; }
+      .cs-cta h2 { font-size: 26px; }
+      .cs-btn-row { flex-direction: column; }
+      .cs-btn { justify-content: center; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .cs-back svg, .cs-btn, .cs-btn svg { transition: none; }
+    }
+  </style>
+</head>
+<body id="top">
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="/" class="logo">
+      <img src="/Sky%26Mar-logo-1-transp.png" alt="Sky &amp; Mar Studio" class="logo-img" />
+    </a>
+    <nav class="site-nav">
+      <a href="/#work" class="nav-link">Work</a>
+      <a href="/#about" class="nav-link">About</a>
+      <a href="/#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="cs-wrap">
+      <a href="/#work" class="cs-back" data-umami-event="cs-back">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+        All work
+      </a>
+
+      <!-- Title -->
+      <div class="cs-head">
+        <p class="cs-eyebrow">Case study</p>
+        <h1 class="cs-title">Parasole Properties</h1>
+        <p class="cs-standfirst">
+          A rental website that does the first step of a showing for the office.
+        </p>
+      </div>
+
+      <!-- Facts -->
+      <dl class="cs-facts">
+        <div class="cs-fact">
+          <dt>Client</dt>
+          <dd>Parasole Property Management, Scranton, PA</dd>
+        </div>
+        <div class="cs-fact">
+          <dt>Scope</dt>
+          <dd>Six-page redesign, plus rental listings the office runs itself</dd>
+        </div>
+        <div class="cs-fact">
+          <dt>Launched</dt>
+          <dd>November 2026</dd>
+        </div>
+        <div class="cs-fact">
+          <dt>Live at</dt>
+          <dd><a href="https://parasoleproperties.com" target="_blank" rel="noopener" data-umami-event="cs-live-site">parasoleproperties.com</a></dd>
+        </div>
+      </dl>
+
+      <!-- The problem -->
+      <section class="cs-section">
+        <div class="cs-narrow">
+          <h2 class="cs-h2">The problem</h2>
+          <div class="cs-body">
+            <p>
+              Parasole has managed homes and apartments around Scranton and Wilkes-Barre for more
+              than 20 years. Before anyone tours a home, the office needs to know two things: can
+              this renter afford it, and are they ready to move?
+            </p>
+            <p>
+              That check used to happen by email. A renter filled out a form, then waited a day or
+              two for the office to write back. The old website could show a home, but it could not
+              do any of that work.
+            </p>
+          </div>
+        </div>
+
+        <figure class="cs-diagram">
+          <svg class="cs-svg-wide" viewBox="0 0 900 240" role="img" xmlns="http://www.w3.org/2000/svg"
+               aria-label="How a renter moves through the site. They pick a home, prequalify with a few quick questions, and request a showing on the home's page. The office gets the request by email, with a copy saved in the dashboard. A renter who is not a fit sees why. A renter ready to apply clicks Apply, which opens that home's own application in the office's software.">
+            <defs>
+              <marker id="ppArrow" viewBox="0 0 10 10" refX="9" refY="5"
+                      markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M0 0 L10 5 L0 10 z" fill="#b9b4ac"/>
+              </marker>
+            </defs>
+
+            <g fill="#fafafa" stroke="#e7e4df" stroke-width="1">
+              <rect x="4"   y="40" width="190" height="68" rx="10"/>
+              <rect x="232" y="40" width="190" height="68" rx="10"/>
+              <rect x="460" y="40" width="190" height="68" rx="10"/>
+              <rect x="4"   y="166" width="190" height="56" rx="10"/>
+            </g>
+            <rect x="688" y="40" width="208" height="68" rx="12" fill="#f2f7f9" stroke="#7BA3B3" stroke-width="2"/>
+            <rect x="232" y="166" width="664" height="56" rx="10" fill="#fbfaf8" stroke="#e7e4df" stroke-width="1"/>
+
+            <g font-family="Outfit, sans-serif" font-size="12" font-weight="600" letter-spacing="1.1" fill="#1a1a1a" fill-opacity="0.42">
+              <text x="4" y="26">1</text>
+              <text x="232" y="26">2</text>
+              <text x="460" y="26">3</text>
+              <text x="688" y="26">4</text>
+            </g>
+
+            <g font-family="Outfit, sans-serif" font-size="16" font-weight="600" fill="#1a1a1a" text-anchor="middle">
+              <text x="99"  y="70">Pick a home</text>
+              <text x="327" y="70">Prequalify</text>
+              <text x="555" y="70">Request a showing</text>
+              <text x="99"  y="199">Ready to apply</text>
+            </g>
+            <text x="792" y="70" font-family="Outfit, sans-serif" font-size="16" font-weight="600" fill="#2e5d6d" text-anchor="middle">The office gets it</text>
+
+            <g font-family="'DM Sans', sans-serif" font-size="12.5" fill="#6b6b6b" text-anchor="middle">
+              <text x="99"  y="92">photos, rent, beds and baths</text>
+              <text x="327" y="92">a few quick questions</text>
+              <text x="555" y="92">right on the home's page</text>
+            </g>
+            <text x="792" y="92" font-family="'DM Sans', sans-serif" font-size="12" fill="#5c8494" text-anchor="middle">by email, saved in the dashboard</text>
+            <text x="564" y="199" font-family="'DM Sans', sans-serif" font-size="13.5" fill="#5a5a5a" text-anchor="middle">Apply opens that home's own application, in the software the office already uses</text>
+
+            <g stroke="#b9b4ac" stroke-width="1.5" marker-end="url(#ppArrow)" fill="none">
+              <line x1="200" y1="74" x2="226" y2="74"/>
+              <line x1="428" y1="74" x2="454" y2="74"/>
+              <line x1="656" y1="74" x2="682" y2="74"/>
+              <path d="M99 110 L99 160"/>
+              <line x1="200" y1="194" x2="226" y2="194"/>
+            </g>
+            <text x="327" y="134" font-family="'DM Sans', sans-serif" font-size="12.5" fill="#8a8a8a" text-anchor="middle">Not a fit? They see why, and can still text.</text>
+          </svg>
+          <div class="cs-mobdiag">
+            <div class="md-row"><b>1. Pick a home</b><i>photos, rent, beds and baths</i></div>
+            <div class="md-row"><b>2. Prequalify</b><i>a few quick questions. Not a fit? They see why, and can still text.</i></div>
+            <div class="md-row"><b>3. Request a showing</b><i>right on the home's page</i></div>
+            <div class="md-all"><b>4. The office gets it</b><i>by email, with a copy saved in the dashboard</i></div>
+            <div class="md-row" style="margin-top:22px;"><b>Ready to apply</b><i>Apply opens that home's own application, in the software the office already uses.</i></div>
+          </div>
+          <figcaption class="cs-caption">
+            The renter's path through the site. The first email the office sees already has the answers in it.
+          </figcaption>
+        </figure>
+
+        <div class="cs-pull">
+          <p>A renter finds out if a home fits in a few questions. The office gets the request with every answer attached.</p>
+          <p class="cs-pull-note">
+            The office still schedules every showing. It just starts with the answers instead of a
+            first email.
+          </p>
+        </div>
+      </section>
+
+      <!-- Decisions -->
+      <section class="cs-section">
+        <div class="cs-narrow">
+          <h2 class="cs-h2">Four decisions, and why</h2>
+          <div class="cs-body">
+            <p>
+              Each one answers the same question: what does the office keep doing by hand that the
+              site could do first?
+            </p>
+          </div>
+        </div>
+
+        <div class="cs-panel">
+        <div class="cs-decisions">
+          <div class="cs-decision">
+            <div class="cs-accent"></div>
+            <h3>Renters first, owners one tap away</h3>
+            <p>
+              The homepage opens on three doors: browse rentals, see if you prequalify, or hand
+              over a property. Renters and owners want different things, so neither has to read
+              past the other's pitch.
+            </p>
+          </div>
+          <div class="cs-decision">
+            <div class="cs-accent"></div>
+            <h3>A private check, not a posted bar</h3>
+            <p>
+              The prequalification looks at income, pets, move-in timing and household size, and
+              tells a renter whether the home fits and why. It never shows a dollar requirement,
+              and the rule lives in the site's settings, so changing it doesn't mean changing code.
+            </p>
+          </div>
+          <div class="cs-decision">
+            <div class="cs-accent"></div>
+            <h3>Requests arrive complete</h3>
+            <p>
+              A renter who fits asks for a showing right there. The office gets an email with every
+              answer, and a copy is saved in the dashboard, so one lost email never means one lost
+              renter.
+            </p>
+          </div>
+          <div class="cs-decision">
+            <div class="cs-accent"></div>
+            <h3>Apply goes where the office already works</h3>
+            <p>
+              Each home's Apply button opens that home's own application in the property
+              management software the office already uses. No second system to keep in sync, and
+              no sensitive applicant details sitting on the website.
+            </p>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- What shipped -->
+      <section class="cs-section">
+        <div class="cs-narrow">
+          <h2 class="cs-h2">What's on the site</h2>
+          <div class="cs-body">
+            <p>
+              Six pages: home, available rentals, how to apply, owners, about, and contact. Every
+              rental gets its own page with photos, the rent, and the prequalification built in.
+            </p>
+          </div>
+        </div>
+
+        <figure class="cs-annotated">
+          <div>
+            <div class="cs-shot">
+              <img src="pp-home.jpg" alt="The Parasole Properties homepage: the logo and menu with a How to Apply button, a red bar with email, office phone and the 24/7 maintenance text line, the headline Find your next place to rent in NEPA over a photo of Scranton at dusk, and three cards for Browse Rentals, See if You Prequalify, and Own a Property." loading="lazy" decoding="async" />
+              <span class="cs-pin" style="left:90.2%; top:13.2%"  aria-hidden="true">1</span>
+              <span class="cs-pin" style="left:76%; top:16.6%" aria-hidden="true">2</span>
+              <span class="cs-pin" style="left:26.6%; top:36.6%" aria-hidden="true">3</span>
+              <span class="cs-pin" style="left:50%;   top:74.6%" aria-hidden="true">4</span>
+            </div>
+            <figcaption class="cs-caption">The homepage at launch.</figcaption>
+          </div>
+          <ol class="cs-notes">
+            <li><span class="cs-note-n">1</span><div>
+              <b>How to Apply, always in reach</b>
+              <i>Same corner, every page. Nobody has to hunt for the next step.</i>
+            </div></li>
+            <li><span class="cs-note-n">2</span><div>
+              <b>Maintenance from any page</b>
+              <i>Email, call, or text the 24/7 maintenance line. On a phone, all three fit on one row.</i>
+            </div></li>
+            <li><span class="cs-note-n">3</span><div>
+              <b>Who it's for, before you scroll</b>
+              <i>Rentals, the region, and a real person a text away.</i>
+            </div></li>
+            <li><span class="cs-note-n">4</span><div>
+              <b>Three doors</b>
+              <i>Browse, prequalify, or list a property. Each one goes straight to its page.</i>
+            </div></li>
+          </ol>
+        </figure>
+
+        <p class="cs-stack-label">Built with tools any web developer already knows:</p>
+        <div class="cs-stack">
+          <span class="cs-chip">WordPress</span>
+          <span class="cs-chip">Astra</span>
+          <span class="cs-chip">Yoast SEO</span>
+          <span class="cs-chip">WP Mail SMTP</span>
+          <span class="cs-chip">Bluehost</span>
+        </div>
+      </section>
+
+      <!-- Handoff -->
+      <section class="cs-section">
+        <div class="cs-narrow">
+          <h2 class="cs-h2">Built so the office runs it</h2>
+          <div class="cs-body">
+            <p>
+              Rentals go stale every time a home rents, so keeping them current had to be easy.
+              Each home is one screen in the dashboard, with a short note under every box. Setting
+              a home to Rented takes it off the list.
+            </p>
+            <p>
+              <strong>Nobody has to call me to change a rent.</strong> The office got an
+              illustrated guide for that screen, and another for showing requests.
+            </p>
+          </div>
+        </div>
+        <figure class="cs-figure" style="max-width:660px;">
+          <div class="cs-shot" style="padding:8px;">
+            <img src="pp-docs.jpg" alt="The top of the rentals guide: Update your rentals in 3 steps, with step one showing the dashboard's list of rentals, their rent, beds and baths, and status." loading="lazy" decoding="async" />
+          </div>
+          <figcaption class="cs-caption">
+            The top of the rentals guide delivered at launch.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- CTA -->
+      <section class="cs-cta">
+        <h2>Is your office answering the same questions all day?</h2>
+        <p>I build sites that answer them first, so the calls you get are the ones worth taking.</p>
+        <div class="cs-btn-row">
+          <a href="/#contact" class="cs-btn" data-umami-event="cs-cta-contact">
+            Start a project
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="https://parasoleproperties.com" target="_blank" rel="noopener" class="cs-btn cs-btn--ghost" data-umami-event="cs-visit-site">Visit the live site</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2026 Sky &amp; Mar Studio LLC</span>
+    <div class="footer-links">
+      <a href="mailto:marina@skymar.studio" data-umami-event="email-footer">marina@skymar.studio</a>
+      <a href="https://linkedin.com/in/marinadiponio" target="_blank" rel="noreferrer">LinkedIn</a>
+    </div>
+  </footer>
+
+</body>
+</html>

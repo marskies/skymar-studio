@@ -284,6 +284,23 @@ html { scroll-behavior: smooth; }
   }
 }
 
+/* Exactly five cards: three on top and two centered underneath on desktop,
+   and the fifth centered on its own row at tablet width. */
+@media (min-width: 901px) {
+  .projects-grid:has(> :nth-child(5):last-child) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .projects-grid:has(> :nth-child(5):last-child) > * { grid-column: span 2; }
+  .projects-grid:has(> :nth-child(5):last-child) > :nth-child(4) { grid-column: 2 / span 2; }
+}
+@media (min-width: 581px) and (max-width: 900px) {
+  .projects-grid:has(> :nth-child(5):last-child) > :nth-child(5) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 14px);
+  }
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
